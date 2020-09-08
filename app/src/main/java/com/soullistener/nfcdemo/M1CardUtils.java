@@ -82,6 +82,7 @@ public class M1CardUtils {
      * @return
      * @throws IOException
      */
+    /*
     public static String readIsoCard(Tag tag) throws IOException {
         IsoDep isoDep = IsoDep.get(tag);
         if (!isoDep.isConnected()){
@@ -96,6 +97,8 @@ public class M1CardUtils {
         return result;
     }
 
+     */
+
     /**
      * M1读取卡片信息
      * @return
@@ -107,7 +110,7 @@ public class M1CardUtils {
             String[][] metaInfo = new String[16][4];
             // 获取TAG中包含的扇区数
             int sectorCount = mifareClassic.getSectorCount();
-            for (int j = 0; j < sectorCount; j++) {
+            for (int j = 1; j < 5; j++) {
                 int bCount;//当前扇区的块数
                 int bIndex;//当前扇区第一块
                 if (m1Auth(mifareClassic,j)) {

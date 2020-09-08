@@ -12,10 +12,10 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:text="读取CPU卡数据"
         android:id="@+id/btn_read_cpu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="写入M1数据" />
 
     <TextView
         android:scrollbars="vertical"
